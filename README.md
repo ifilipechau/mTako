@@ -32,3 +32,47 @@ Simulação interactiva de uma aplicação USSD (tipo M-Pesa / E-mola) na linha 
 git clone https://github.com/seu-usuario/ussd-mtako-cli.git
 cd ussd-mtako-cli
 
+1. Executar a aplicação:
+
+bash
+```bash
+python ussd_app.py
+
+---
+## 📌 Exemplo de Uso
+
+```bash
+Bem-vindo ao M-Pesa CLI
+1. Enviar Dinheiro
+2. Levantar Dinheiro
+3. Pagamento de Serviços
+4. Consultar Saldo
+5. Alterar PIN
+0. Sair
+Escolha uma opção: 1
+
+---
+## 📚 Aprendizagens
+
+Este projecto ajuda a consolidar conhecimentos em:
+
+* Estruturação de aplicações Python
+* Manipulação de input/output em terminal
+* Simulação de lógica de negócio financeira
+* Separação de responsabilidades (menus, lógica e interface)
+
+## 📈 Melhorias Futuras
+
+- Adicionar testes unitários
+- Melhorar a interface de utilizador
+- Implementação de autenticação de utilizador
+- Validação de transações (ex: saldo suficiente)
+- Persistência de dados (ex: SQLite)
+- Exportação de extractos em CSV
+- Gestão de utilizadores
+
+---
+## 👨🏽‍💻 Autor
+
+Desenvolvido por [Filipe-Chau].
+📫 Contacto: [filipechau@outlook.pt]
