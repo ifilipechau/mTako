@@ -33,4 +33,11 @@ def run_ussd():
             codigo = input("Código do agente: ")
             valor = float(input("Valor a levantar (MZN): "))
             print(mtako.levantar_dinheiro(codigo, valor))
+        
+        # Pagamento de Serviços
+        elif opcao == "3":
+            print(get_service_menu(opcao))
+            servico = input("Serviço: ")
+            valor = float(input("Valor a pagar (MZN): "))
+            print(f"{valor:.2f} MZN pago para serviço {servico}. Obrigado.")
             
