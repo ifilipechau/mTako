@@ -22,4 +22,15 @@ def run_ussd():
 
         # Enviar Dinheiro
         elif opcao == "1":
-            print(get_service_menu)
+            print(get_service_menu(opcao))
+            numero = input("Número: ")
+            valor = float(input("Valor a enviar (MZN): "))
+            print(mtako.enviar_dinheiro(numero, valor))
+        
+        # Levantar Dinheiro
+        elif opcao == "2":
+            print(get_service_menu(opcao))
+            codigo = input("Código do agente: ")
+            valor = float(input("Valor a levantar (MZN): "))
+            print(mtako.levantar_dinheiro(codigo, valor))
+            
