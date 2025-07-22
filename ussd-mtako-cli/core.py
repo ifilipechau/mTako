@@ -19,3 +19,12 @@ class Mtako:
         self.saldo -= valor
         return f"Enviado {valor:.2f} MZN para {numero}. Saldo actual: {self.saldo:.2f} MZN"
     
+    def levantar_dinheiro(self, codigo, valor):
+        """
+        Simula um levantamento de dinheiro num agente, descontando do saldo.
+        """
+        if valor > self.saldo:
+            return "Saldo insuficiente."
+        self.saldo -= valor
+        return f"Levantamento de {valor:.2f} MZN feito no agente {codigo}. Saldo: {self.saldo:.2f} MZN."
+    
