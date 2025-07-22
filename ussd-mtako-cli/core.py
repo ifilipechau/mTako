@@ -27,4 +27,11 @@ class Mtako:
             return "Saldo insuficiente."
         self.saldo -= valor
         return f"Levantamento de {valor:.2f} MZN feito no agente {codigo}. Saldo: {self.saldo:.2f} MZN."
-    
+
+    def consultar_saldo(self, pin):
+        """
+        Mostra o saldo apenas se o PIN estiver correcto.
+        """
+        if pin != self.pin:
+            return "PIN incorrecto."
+        return f"Seu saldo é {self.saldo:2.f} MZN."
