@@ -36,3 +36,12 @@ class Mtako:
             return "PIN incorrecto."
         return f"Seu saldo é {self.saldo:2f} MZN."
     
+    def alterar_pin(self, old_pin, new_pin):
+        """
+        Permite alterar o PIN, desde que o actual esteja correcto.
+        """
+        if old_pin != self.pin:
+            return "PIN actual incorrecto."
+        self.pin = new_pin
+        return "PIN alterado com sucesso."
+    
