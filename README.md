@@ -20,7 +20,7 @@ Simulação interactiva de uma aplicação USSD (tipo M-Pesa / E-mola) na linha 
 
 - Python 3.10+
 - Interface de linha de comandos (CLI)
-- Arquitetura modular
+- Arquitectura modular
 
 ---
 
@@ -29,8 +29,8 @@ Simulação interactiva de uma aplicação USSD (tipo M-Pesa / E-mola) na linha 
 1. Clonar o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/ussd-mtako-cli.git
-cd ussd-mtako-cli
+git clone https://github.com/seu-usuario/ussd-mtako.git
+cd ussd-mtako
 
 1. Executar a aplicação:
 
@@ -42,7 +42,7 @@ python ussd_app.py
 ## 📌 Exemplo de Uso
 
 ```bash
-Bem-vindo ao M-Pesa CLI
+Bem-vindo ao M-Tako CLI
 1. Enviar Dinheiro
 2. Levantar Dinheiro
 3. Pagamento de Serviços
@@ -52,7 +52,7 @@ Bem-vindo ao M-Pesa CLI
 Escolha uma opção: 1
 
 ---
-## 📚 Aprendizagens
+## 📚 Aprendizados
 
 Este projecto ajuda a consolidar conhecimentos em:
 
