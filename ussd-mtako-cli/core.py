@@ -34,4 +34,5 @@ class Mtako:
         """
         if pin != self.pin:
             return "PIN incorrecto."
-        return f"Seu saldo é {self.saldo:2.f} MZN."
+        return f"Seu saldo é {self.saldo:2f} MZN."
+    
