@@ -49,4 +49,8 @@ def run_ussd():
 
         # Alterar PIN
         elif opcao == "5":
+            print(get_service_menu(opcao))
+            old_pin = input("PIN actual: ")
+            new_pin = input("Novo PIN: ")
+            print(mtako.alterar_pin(old_pin, new_pin))
             
