@@ -40,4 +40,13 @@ def run_ussd():
             servico = input("Serviço: ")
             valor = float(input("Valor a pagar (MZN): "))
             print(f"{valor:.2f} MZN pago para serviço {servico}. Obrigado.")
+
+        # Consultar Saldo
+        elif opcao == "4":
+            print(get_service_menu(opcao))
+            pin = input("PIN: ")
+            print(mtako.consultar_saldo(pin))
+
+        # Alterar PIN
+        elif opcao == "5":
             
