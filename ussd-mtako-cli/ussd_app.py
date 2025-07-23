@@ -53,4 +53,12 @@ def run_ussd():
             old_pin = input("PIN actual: ")
             new_pin = input("Novo PIN: ")
             print(mtako.alterar_pin(old_pin, new_pin))
+
+        # Opção inválida
+        else:
+            print("Opção inválida. Tente novamente.")
+
+# Executa a função principal se este ficheiro for o ponto de entrada
+if __name__ == "__main__":
+    run_ussd()
             
